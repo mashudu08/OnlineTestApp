@@ -33,3 +33,22 @@
 <ng-template #noQuestions>
   <p>No questions available</p>
 </ng-template>
+
+<div class="card">
+
+</div>
+
+ 
+<!-- Quiz Results-->
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <div class="card text-center mt-5">
+            <div class="card-body">
+              <div *ngIf="submitted">
+                <h2>Your Quiz Result</h2>
+                <p>Your Score: {{ score }}/{{ questions.length }}</p>
+            </div>
+        </div>
+    </div>
+</div>

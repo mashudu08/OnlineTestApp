@@ -10,6 +10,9 @@ export class QuizQuestionsComponent implements OnInit {
   questions: any[] = [];
   selectedOptions: any = {};
   submitted = false;
+  
+  results: any[] = [];
+  score = 0;
 
   constructor(private quizService: QuizService) {}
 
@@ -18,7 +21,13 @@ export class QuizQuestionsComponent implements OnInit {
     this.quizService.getQuestions().subscribe(
       (data: any[]) => {
         this.questions = data;
-        console.log(this.questions);
+        //console.log(this.questions);
+
+        this.results = this.questions.map((question) => ({
+          id: question.id,
+          isCorrect: false,
+        }));
+
       },
       (error) => {
         console.error('Error fecthing questions: ', error);
@@ -28,5 +37,12 @@ export class QuizQuestionsComponent implements OnInit {
 
   async submit(): Promise<void> {
     this.submitted = true;
+
+    this.results = this.questions.map((question) => ({
+      id: question.id,
+      isCorrect: this.selectedOptions[question.id] === question.answer,
+    }));
+
+    this.score = this.results.filter((res) => res.isCorrect).length;
   }
 }
