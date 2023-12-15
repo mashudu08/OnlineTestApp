@@ -1,0 +1,59 @@
+{
+  "backendQuizzes": [
+    {
+      "id": 1,
+      "question": "What is the purpose of a 'Promise' in JavaScript?",
+      "options": [
+        "To handle asynchronous operations",
+        "To style web pages",
+        "To define HTML structure",
+        "To manage database queries"
+      ],
+      "answer": "To handle asynchronous operations"
+    },
+    {
+      "id": 2,
+      "question": "Which HTTP method is generally used for updating data on the server?",
+      "options": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "answer": "PUT"
+    },
+{
+      "id": 3,
+      "question": "What is the purpose of a 'Foreign Key' in a relational database?",
+      "options": [
+        "To uniquely identify each record in a table",
+        "To establish a link between two tables",
+        "To create a primary index",
+        "To encrypt sensitive data"
+      ],
+      "answer": "To establish a link between two tables"
+    },
+    {
+      "id": 4,
+      "question": "What does 'ORM' stand for in the context of software development?",
+      "options": [
+        "Object-Relational Model",
+        "Object-Resource Management",
+        "Object-Role Modeling",
+        "Object-Request Module"
+      ],
+      "answer": "Object-Relational Model"
+     },
+     {
+       "id": 5,
+      "question": "What is Spring Boot in Java?",
+      "options": [
+        "A Java virtual machine",
+        "A web server",
+        "A framework for building Java applications",
+        "An integrated development environment (IDE)"
+      ],
+      "answer": "A framework for building Java applications"
+    }
+  ]
+}
